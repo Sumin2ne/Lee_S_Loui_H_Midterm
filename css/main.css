@@ -1,0 +1,38 @@
+
+
+/* 
+
+      CSS Guide
+
+      1. General Styles
+      2. Grid
+      3. Header
+      4. Main Hero
+      5. About
+      6. Product-con
+      7. Ad img
+      8. Footer
+
+*/
+
+/* 1. ---General Styles--- */
+
+.hidden {
+	display: none;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+img, video, object {
+      max-width: 100%;
+}
+
+#container {
+      /* allows container to scale up to 1200px */
+      max-width: 1200px;
+      margin: 0 auto;
+}

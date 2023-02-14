@@ -1,0 +1,45 @@
+
+/* 
+
+      CSS Guide
+
+      1. General Styles
+      2. Grid
+      3. Header
+      4. Main Hero
+      5. About
+      6. Product-con
+      7. Ad img
+      8. Footer
+
+*/
+
+/* 1. ---General Styles--- */
+
+.hidden {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+img, video, object {
+      max-width: 100%;
+}
+
+
+#container {
+	margin: 0 auto;
+	width: 428px;
+}
+
+/* this is our grid based off of our XD file */
+.grid-con {
+	display: grid;
+	grid-template-columns: repeat(4, 85px);
+	grid-column-gap: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
