@@ -25,6 +25,13 @@ a {
 }
 
 
+body {
+      font-family: 'Fino Sans', Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      background-color: #fff;
+}
+
+
 img, video, object {
       max-width: 100%;
 }
@@ -35,123 +42,295 @@ img, video, object {
 	width: 428px;
 }
 
-body {
-      font-family: 'Fino Sans', Arial, Helvetica, sans-serif;
-      font-size: 20px;
-      background-color: #fff;
-}
-
-
-/* nav animation */
-li {
-	cursor: pointer;}
-
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-	transition: all .2s ease-out;
-      
-}
-nav ul li a:hover {
-	color: #110F40;
-	border-bottom: 3px solid #ffffff;
-	padding-bottom: 5px;
-}
-
-
-
-
-/* 2. ---Grid--- */
-
+/* this is our grid based off of our XD file */
 .grid-con {
-	display: grid;
-	grid-template-columns: repeat(4, 85px);
-	grid-column-gap: 16px;
-	padding-left: 20px;
-	padding-right: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 85px);
+      grid-column-gap: 30px;
+    
 }
 
 
 /* 3. ---Header--- */
 
 header {
-      background-color: #FFC738;
+      position: sticky;
       height: 50px;
+      grid-column: 1/-1;
+      background-color:#FFC738;
+      filter:drop-shadow(0px 3px 5px #1E346E) ;
 }
 
-#main-nav {
+/* 
+.main-nav {
+      height: 90px;
+      grid-column: 2/6;
+}
+
+.main-nav ul, .sub-nav ul {
+      margin-top: 55px;
+      margin-left: 30px;
+      padding:0;
+}
+
+.main-nav li{
+      display: inline;
+      margin-right: 40px;
+}
+
+.sub-nav li{
+      display: inline;
+      margin-right: 40px;
+}
+
+
+.main-nav li a,.sub-nav li a{
+      text-decoration: none;
+      color: #fff;
+} */
+
+#main-logo {
+      margin: 1px;
+      padding-left: 1rem;
+      padding-top: 5px;
+      width: 3rem;
+      grid-column: 1/-1;
+
+}
+
+#burger-m{
+      margin: 1px;
+      padding-left: 1rem;
+      padding-top: 1px;
+      width: 3rem;
+      grid-column: 4/-1;
+}
+/* 
+#main-logo:hover {
+      transform: scale(1.2);
+      transition: all .4s ease-in-out;
+} */
+
+/* 
+.sub-nav {
+      height: 50px;
+      grid-column: 2/2;
+} */
+
+.button {
+      height: 30px;
+      width: 120px;
+      background-color: #fff;
+      text-align: center;
+      margin-top: 30px;
+
+      /* border: 2px solid #110F40; */
+      border-radius: 20px;
+
+      font-size: 16px;
+}
+
+#store-button{
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      color: #1E346E;
+      
+      padding-top: 20px;
+}
+
+
+#store-button:hover {
+      color: #fff;
+      background-color: #110F40;
+      transition: all .4s ease-in-out;
+
+      box-shadow: inset 0px -60px 0px 0px #FFC738;
+      transition:all .6s ease;
+}
+
+
+
+
+/* 4. ---Main Hero--- */
+
+
+#hero-img1 {
+      display: grid;
+      grid-column: 1/-1;
+
+      height: 874;
+}
+
+#hero-img2 {
+      display: grid;
+      grid-column: 1/-1;
+      height: 874px;
+}
+
+
+#hero-video {
+      margin-top: 150px;
+      display: grid;
       grid-column: 1/-1;
 }
 
-#main-nav label img {
-      background: url(../images/burger.svg) center no-repeat;
-      border: none;
 
-      width: 20px;
-      height: 20px;
 
-      transition: all .4s ease;
-      margin-top: 15px;
-      margin-bottom: 20px;
-      cursor: pointer;
-}
 
-#main-nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      margin-bottom: 60px;
-}
 
-#main-nav li a {
-      display: block;
-      padding: 10px 0 10px 0;
+/* 5. ---About--- */
+
+#about-tex {
+      margin-top: 50px;
+      padding: 1rem 1rem 1rem;
+      display: grid;
+      grid-column: 1/-1;
+      line-height: 1.5rem;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 20px;
       text-align: center;
-      color: #110F40;
 }
 
-#main-nav li a:hover {
+#about-rotation-img {
+      display: grid;
+      grid-column: 1/-1;
+      padding: 4rem;
+      margin-top: 10px;
+      width: 314px;
+}
+
+#story-con {
+      background-color: #FFC738;
+      margin-top: 100px;
+      text-align: center;
+      display: grid;
+}
+
+#story-con p {
+      display: grid;
+      grid-column: 1/-1;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: italic;
+      line-height: 2rem;
+      padding: 1rem 1rem 1rem;
+      text-align: center;
+      margin-top: 2rem;
+}
+
+#ourstory-button {
+      display: grid;
+      font-size: 24px;
+      margin: 1rem 1.5rem 2rem;
+      grid-column: 2/-1;
+      padding: 1rem;
+}
+
+/* 
+#ourstory-button:hover {
+      background-color: #1E346E;
+      color: #FFC738;
+      transition: all .3s ease-in-out;
+} */
+
+
+
+/* 6. ---Product-con--- */
+
+
+#product-con {
+      height: 800px;
+      background-color: #1E346E;
+      display: flex;
+      justify-content: center;
+}
+
+.prod-box {
+      margin-top: 50px;
+      padding-top: 30px;
+
+      background-color: #fff;
+      height: 600px;
+      width: 340px;
+
+      border-radius: 80px 80px 0 0;
+
+      color: #fff;      
+      text-decoration: none;
+      text-align: center;
+}
+
+.prod-box:hover{  
+      background-image: url(../images/m-hover-bkg.jpg);
+      
+}
+
+.prod-box a{
+
+      margin-top: 50px;
+      padding: 10px 20px;
+
+      background-color: #fff;
+      border-radius: 10px;
+      font-size: 16px;
+
+}
+
+.prod-box a:hover{
+      background-color: #FFC738;
+}
+
+.prod-box p {
+      color: #830000;
+      margin-top: 20px;
+      padding: 1rem ;
+      line-height: 1rem;
+      font-size: 16px;
+}
+
+
+
+/* Banner */
+
+#banner-tex {
+      margin-top: 100px;
+      margin-bottom: 10px;
+      font-style: italic;
+      font-size: 20px;
+      text-align: center;
+}
+
+#banner-tex span{
+      margin-right: 50px;
       color: #FFC738;
 }
 
-#main-nav li {
-                  border-bottom: 1px solid #110F40;
-            }
-            
-#main-nav li:first-child {
-                  border-top: 1px solid #efefef;
-            }
-            
-#main-nav li:last-child {
-                  margin-bottom: 10px;
-            }
-#burger-con, #main-nav input {
-      display: none;
-}
 
-#main-nav input:checked ~ #burger-con {
-      display: block;
-}
+/* 7. ---Ad img--- */
 
-#main-nav input:checked ~ label img{
-      transform: rotate(90deg);
-}
-
-#burger-img {
-      grid-column: 4/-1;
-}
-
-#main-logo {
+#ad-img {
       grid-column: 1/-1;
-      width: 170px;
-      margin: 0 auto;
-      margin-top: -50px;
+      display: grid;
+      text-align: center;
 }
 
+#ad-1 {
+      grid-column: 1/-1;
+}
 
+#ad-2 {
+      grid-column: 1/-1;
+}
 
-.cr-red {
-      color: #110F40;
+#ad-img p {
+      margin-top: 50px;
+      grid-column: 1/-1;
+      padding: 1rem 1rem 1rem;
+      font-size: 24px;
+
+      margin-bottom: 100px;
 }
 
 
@@ -159,25 +338,26 @@ header {
 
 /* 8. ---Footer--- */
 
-
-
 footer {
-      height: 780px;
+      height: 1300px;
       background-color:#110F40;
       display: grid;
 }
 
 
-
+#footer-logo {
+      width: 300px;
+      grid-column: 1/4;
+      margin-top: 10px;
+      padding-left: 4rem;
+      padding-right: 4rem;
+}
 
 #contact-con {
       grid-column: 1/-1;
-      margin-top: 100px;
-      margin-left: 80px;
-      margin-bottom: 40px;
-
+      padding: 2rem;
+      margin-top: 50px;
       font-size: 10px;
-      display: block;
 }
 
 
@@ -187,12 +367,12 @@ footer {
       border-bottom: 1px solid #fff;
       font-style: italic;
 
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       background-color: #110F40;
 
       color: #fff;
 
-      padding-bottom: 10px;
+      padding-bottom: 15px;
 }
 
 #contact-con input:focus {
@@ -200,19 +380,19 @@ footer {
 }
 
 #Name_footer{
-      width: 220px;
+      width: 250px;
 }
 
 #phone_footer {
-      width: 220px;
+      width: 250px;
 }
 
 #email_footer {
-      width: 220px;
+      width: 250px;
 }
 
 #message_footer {
-      width: 220px;
+      width: 350px;
 }
 
 #send_footer {
@@ -222,11 +402,9 @@ footer {
       font-style: italic;
 
       cursor: pointer;
-      padding: 5px;
-      padding-left: 10px;
-      padding-right: 10px;
-
-      margin-left: 150px;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
 }
 
 
@@ -242,13 +420,14 @@ footer {
 
 #info-con {
       color: #fff;
-      grid-column: 2/4;
+      grid-column: 1/4;
+      padding-left: 2rem;
 }
 
 #info-con h3 {
       font-weight: 700;
       font-style: normal;
-      margin-bottom: 20px;
+      margin-bottom: 1px;
 }
 
 #info-con span {
@@ -257,31 +436,108 @@ footer {
 
 #sm-icons {
       display: flex;
-      height: 30px;
-
-      grid-column: 2/4;
-      margin-left: 10px;
-      margin-top: 20px;
+      height: 3rem;
+      grid-column: 1/4;
+      padding-left: 2rem;;
 }
 
 #sm-icons img {
-      margin-right: 30px;
+      margin-right: 10px;
 }
-
-#footer-logo {
-      width: 170px;
-      grid-column: 2/4;
-
-      margin-top: 50px;
-}
-
 
 #ver-line {
       grid-column: 1/-1;
       border-bottom: solid 1px #fff;
-      
-      margin-top: 30px;
+      padding: 1rem;
+      margin: 2rem; 
+}
+
+#ver-line span {
+      color: #fff;
+      font-size: 14px;
+      padding: 1rem;
       margin-bottom: 30px;
 }
 
 
+
+
+
+
+/*---- 9. Our Story page -----*/
+
+
+#story {
+      background-image: url(../images/story-bkg.png);
+      margin-top: 30px;
+      display: grid;
+}
+
+#title {
+      height: 40px;
+      margin-top: 50px;
+      padding: 10px;
+
+      grid-column: 6/8;
+      background-color: #fff;
+      color: #110F40;
+      border-radius: 20px;
+
+      font-size: 30px;
+      text-align: center;
+}
+
+.story-img {
+      grid-column: 2/7;
+      margin-top: 40px;
+      margin-left: 35px;
+}
+
+.story-box {
+      grid-column: 7/12;
+      background-color: #78150D;
+      height: 460px;
+      width: 412px;
+
+      margin-top: 40px;
+      margin-left: -15px;
+      padding: 20px;
+
+      display: block;
+
+      color: #fff;
+}
+
+
+.story-box h3 {
+      margin-left: 20px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+}
+.story-box p {
+      margin-left: 20px;
+      font-size: 16px;
+      line-height: 25px;
+}
+
+
+#closing-tex {
+      grid-column: 2/12;
+      text-align: center;
+
+      margin-top: 100px;
+      margin-bottom: 60px;
+
+      padding: 20px;
+      color: #110F40;
+}
+
+#closing-tex p {
+      margin-bottom: 30px;
+}
+
+#closing-tex span {
+      font-size: 23px;
+      margin-top: 20px;
+      font-style: italic;
+}
