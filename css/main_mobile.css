@@ -35,7 +35,34 @@ img, video, object {
 	width: 428px;
 }
 
-/* this is our grid based off of our XD file */
+body {
+      font-family: 'Fino Sans', Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      background-color: #fff;
+}
+
+
+/* nav animation */
+li {
+	cursor: pointer;}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+	transition: all .2s ease-out;
+      
+}
+nav ul li a:hover {
+	color: #110F40;
+	border-bottom: 3px solid #ffffff;
+	padding-bottom: 5px;
+}
+
+
+
+
+/* 2. ---Grid--- */
+
 .grid-con {
 	display: grid;
 	grid-template-columns: repeat(4, 85px);
@@ -43,3 +70,218 @@ img, video, object {
 	padding-left: 20px;
 	padding-right: 20px;
 }
+
+
+/* 3. ---Header--- */
+
+header {
+      background-color: #FFC738;
+      height: 50px;
+}
+
+#main-nav {
+      grid-column: 1/-1;
+}
+
+#main-nav label img {
+      background: url(../images/burger.svg) center no-repeat;
+      border: none;
+
+      width: 20px;
+      height: 20px;
+
+      transition: all .4s ease;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      cursor: pointer;
+}
+
+#main-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 60px;
+}
+
+#main-nav li a {
+      display: block;
+      padding: 10px 0 10px 0;
+      text-align: center;
+      color: #110F40;
+}
+
+#main-nav li a:hover {
+      color: #FFC738;
+}
+
+#main-nav li {
+                  border-bottom: 1px solid #110F40;
+            }
+            
+#main-nav li:first-child {
+                  border-top: 1px solid #efefef;
+            }
+            
+#main-nav li:last-child {
+                  margin-bottom: 10px;
+            }
+#burger-con, #main-nav input {
+      display: none;
+}
+
+#main-nav input:checked ~ #burger-con {
+      display: block;
+}
+
+#main-nav input:checked ~ label img{
+      transform: rotate(90deg);
+}
+
+#burger-img {
+      grid-column: 4/-1;
+}
+
+#main-logo {
+      grid-column: 1/-1;
+      width: 170px;
+      margin: 0 auto;
+      margin-top: -50px;
+}
+
+
+
+.cr-red {
+      color: #110F40;
+}
+
+
+
+
+/* 8. ---Footer--- */
+
+
+
+footer {
+      height: 780px;
+      background-color:#110F40;
+      display: grid;
+}
+
+
+
+
+#contact-con {
+      grid-column: 1/-1;
+      margin-top: 100px;
+      margin-left: 80px;
+      margin-bottom: 40px;
+
+      font-size: 10px;
+      display: block;
+}
+
+
+#contact-con input {
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #fff;
+      font-style: italic;
+
+      margin-bottom: 20px;
+      background-color: #110F40;
+
+      color: #fff;
+
+      padding-bottom: 10px;
+}
+
+#contact-con input:focus {
+      outline: none !important;
+}
+
+#Name_footer{
+      width: 220px;
+}
+
+#phone_footer {
+      width: 220px;
+}
+
+#email_footer {
+      width: 220px;
+}
+
+#message_footer {
+      width: 220px;
+}
+
+#send_footer {
+      border-radius: 40px;
+      background-color: #fff;
+      align-items: center;
+      font-style: italic;
+
+      cursor: pointer;
+      padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      margin-left: 150px;
+}
+
+
+#send_footer:hover {
+      box-shadow: inset 0px -50px 0px 0px #FFC738;
+      transition:all .8s ease;
+}
+
+#send_footer span {
+      color: #110F40;
+      margin: 10px;
+}
+
+#info-con {
+      color: #fff;
+      grid-column: 2/4;
+}
+
+#info-con h3 {
+      font-weight: 700;
+      font-style: normal;
+      margin-bottom: 20px;
+}
+
+#info-con span {
+      margin-bottom: 15px;
+}
+
+#sm-icons {
+      display: flex;
+      height: 30px;
+
+      grid-column: 2/4;
+      margin-left: 10px;
+      margin-top: 20px;
+}
+
+#sm-icons img {
+      margin-right: 30px;
+}
+
+#footer-logo {
+      width: 170px;
+      grid-column: 2/4;
+
+      margin-top: 50px;
+}
+
+
+#ver-line {
+      grid-column: 1/-1;
+      border-bottom: solid 1px #fff;
+      
+      margin-top: 30px;
+      margin-bottom: 30px;
+}
+
+
