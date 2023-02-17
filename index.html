@@ -6,66 +6,120 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/reset.css">
       <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="https://use.typekit.net/dul5hin.css">
       <title>Billy Beer Home Page</title>
 </head>
 <body>
       <div id="container">
             <header class="main-header">
-                  <div id="main-logo">
+                  <section  class="grid-con">
+                        <h2 class="hidden">
+                              Top Navigation Menu</h2>
+                        <nav class="main-nav">
+                              <ul>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="about.html">OUR STORY</a></li>
+                                    <li><a href="#">PRODUCT</a></li>
+                              </ul>
+                        </nav>
+                        <div id="main-logo">
+                              <a href="index.html"></a>
+                              <img src="images/BillyBeerLogo.svg" alt="Billy Beer Main Logo">
+                        </div>
+                        <nav class="sub-nav">
+                              <ul>
+                                    <li id="menu-4"><a href="#">CONTACT US</a></li>
+                                    <li><a href="#">SEARCH</a></li>
+                              </ul>
+                        </nav>
+                        <a href="#" class="button" id="store-button">
+                              STORE
+                        </a>
+                  </section>
+                        
 
-                  </div>
-                  <div id="store" class="button">
-
-                  </div>
-
+                  
             </header>
+
+
 
             <main>
                   <section class="grid-con" id="hero-con">
-                        <div id="hero-img1"></div>
-                        <div id="hero-img2"></div>
 
-                        <div id="hero-video"></div>
+                        <div id="hero-img1">
+                              <img src="images/1-hero-img.png" alt="billy beer main hero">
+                        </div>
+                        <div id="hero-img2">
+                              <img src="images/2-hero-img.png" alt="billy beer hero-2">
+                        </div>
+
+                        <div id="hero-video">
+                              <img src="images/Video-Box.png" alt="video">
+                        </div>
+                        
+
+                        <div id="about-tex">
+                              <p>" At auctor urna nunc id cursus metus aliquam eleifend mi. Mattis molestie a iaculis at erat pellentesque adipiscing. Ut porttitor Leo a diam sollicitudin tempor. "</p>
+                        </div>
+
                   </section>
 
-                  <section class="grid-con">
-                        <div id="about-tex"></div>
-                        <div id="about-rotation-img"></div>
-                        <div id="our-story"></div>
+
+                  <section class="grid-con" id="about-con">
+
+                        <div id="about-rotation-img">
+                              <img src="images/4rotation-img-box A.png" alt="rotation-img">
+                        </div>
+                  </section>
+                  <section class="grid-con" id="story-con">
+                        <p>
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                                    text ever since the 1500s
+                              </p>
+                        <div class="button" id="ourstory-button"><a>Our Story</a></div>
+
                   </section>
 
 
 
                   <section class="grid-con" id="product-con">
-                        <div id="prod1"><img src="" alt="">
-                              <a href="">
-                                    <h3>
-                                          <p></p>
-                                    </h3>
-                              </a>
+                        <div class="prod-box" id="prod1">
+                              <img src="images/5-prod.png" alt="product-1">
+                              <a href="#">
+                              Original
+                              </a>            
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                         </div>
-                        <div id="prod2"><img src="" alt="">
-                              <a href="">
-                                    <h3>
-                                          <p></p>
-                                    </h3>
-                              </a>
+
+                        <div class="prod-box" id="prod2">
+                              <img src="images/6-prod.png" alt="product-2">
+                              <a href="#">Light
+                              </a>      
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p> 
                         </div>
-                        <div id="prod3"><img src="" alt="">
-                              <a href="">
-                                    <h3>
-                                          <p></p>
-                                    </h3>
-                              </a>
+
+                        <div class="prod-box" id="prod3">
+                              <img src="images/7prod.png" alt="product-3">
+                              <a href="#">Zero
+                              </a>      
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                         </div>
+
                   </section>
 
                   <section id="banner-tex">
-
+                        <span>  atest Craft Billy Beer ™</span>
+                        <span>  America’s All-Time Greatest Craft Billy Beer ™</span>
+                        <span>  America’s All-Time </span>
                   </section>
 
                   <section class="grid-con" id="ad-img">
+                        <img src="images/ad-1.png" alt="ad image"
+                        id="ad-1">
+                        <img src="images/ad-img2.png" alt="ad image2" id="ad-2">
 
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                              text ever since the 1500s</p>
                   </section>
 
 
@@ -73,20 +127,51 @@
 
 
             <footer id="footer-con">
+                  <h2 class="hidden">Main Footer</h2>
                   <div class="grid-con" id="footer">
-                        <div id="footer-logo"></div>
-                        <p></p>
+                        <img src="images/BillyBeerLogo.svg" alt="billy beer logo"
+                        id="footer-logo">
+                        
+
 
                         <div id="contact-con">
+                              <input id="Name_footer" name="Name" 
+                              type="text" placeholder="  Name*">
+                              <input id="phone_footer" type="tel" name="Telephone" placeholder="  Telephone*">
+                              <input id="email_footer" name="email" type="email" id="email_footer" placeholder="  Email*">
+                              <input name="message" type="text" id="message_footer" placeholder="  Message*">
+                              <button id="send_footer" name="send" type="submit" value="Send">
+                                    <span>Send</span>
+                              </button>
 
                         </div>
 
                         <div id="info-con">
 
+                              <h3>Billy Beer Corporation</h3>
+                              <span>3032 Adamsville Road</span>
+
+                              <span>
+                              Victoria, Texas – 77901
+                              </span>
+                              <span>contactus@billybeercorp.com
+                              </span>      
+                              <span>361-550-1795</span> 
+                        </div>
+
+                        <div id="sm-icons">
+                              <img src="images/DT - Insta.png" alt="insta icon">
+                              <img src="images/DT - Linkedin.png" alt="linkedin icon">
+                              <img src="images/DT - twitter.png" alt="twitter icon">
+                        </div>
+
+                        <div id="ver-line">
+                              <span>
+                                    &#9650; Top
+                              </span>
                         </div>
                   </div>
             </footer>
-
 
       </div>
 
