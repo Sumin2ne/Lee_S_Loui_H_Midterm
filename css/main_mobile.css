@@ -25,6 +25,13 @@ a {
 }
 
 
+body {
+      font-family: 'Fino Sans', Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      background-color: #fff;
+}
+
+
 img, video, object {
       max-width: 100%;
 }
@@ -37,9 +44,500 @@ img, video, object {
 
 /* this is our grid based off of our XD file */
 .grid-con {
-	display: grid;
-	grid-template-columns: repeat(4, 85px);
-	grid-column-gap: 16px;
-	padding-left: 20px;
-	padding-right: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 85px);
+      grid-column-gap: 30px;
+    
+}
+
+
+/* 3. ---Header--- */
+
+header {
+      position: sticky;
+      height: 50px;
+      grid-column: 1/-1;
+      background-color:#FFC738;
+      filter:drop-shadow(0px 3px 5px #1E346E) ;
+}
+
+/* 
+.main-nav {
+      height: 90px;
+      grid-column: 2/6;
+}
+
+.main-nav ul, .sub-nav ul {
+      margin-top: 55px;
+      margin-left: 30px;
+      padding:0;
+}
+
+.main-nav li{
+      display: inline;
+      margin-right: 40px;
+}
+
+.sub-nav li{
+      display: inline;
+      margin-right: 40px;
+}
+
+
+.main-nav li a,.sub-nav li a{
+      text-decoration: none;
+      color: #fff;
+} */
+
+#main-logo {
+      margin: 1px;
+      padding-left: 1rem;
+      padding-top: 5px;
+      width: 3rem;
+      grid-column: 1/-1;
+
+}
+
+#burger-m{
+      margin: 1px;
+      padding-left: 1rem;
+      padding-top: 1px;
+      width: 3rem;
+      grid-column: 4/-1;
+}
+/* 
+#main-logo:hover {
+      transform: scale(1.2);
+      transition: all .4s ease-in-out;
+} */
+
+/* 
+.sub-nav {
+      height: 50px;
+      grid-column: 2/2;
+} */
+
+.button {
+      height: 30px;
+      width: 120px;
+      background-color: #fff;
+      text-align: center;
+      margin-top: 30px;
+
+      /* border: 2px solid #110F40; */
+      border-radius: 20px;
+
+      font-size: 16px;
+}
+
+#store-button{
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      color: #1E346E;
+      
+      padding-top: 20px;
+}
+
+
+#store-button:hover {
+      color: #fff;
+      background-color: #110F40;
+      transition: all .4s ease-in-out;
+
+      box-shadow: inset 0px -60px 0px 0px #FFC738;
+      transition:all .6s ease;
+}
+
+
+
+
+/* 4. ---Main Hero--- */
+
+
+#hero-img1 {
+      display: grid;
+      grid-column: 1/-1;
+
+      height: 874;
+}
+
+#hero-img2 {
+      display: grid;
+      grid-column: 1/-1;
+      height: 874px;
+}
+
+
+#hero-video {
+      margin-top: 150px;
+      display: grid;
+      grid-column: 1/-1;
+}
+
+
+
+
+
+/* 5. ---About--- */
+
+#about-tex {
+      margin-top: 50px;
+      padding: 1rem 1rem 1rem;
+      display: grid;
+      grid-column: 1/-1;
+      line-height: 1.5rem;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 20px;
+      text-align: center;
+}
+
+#about-rotation-img {
+      display: grid;
+      grid-column: 1/-1;
+      padding: 4rem;
+      margin-top: 10px;
+      width: 314px;
+}
+
+#story-con {
+      background-color: #FFC738;
+      margin-top: 100px;
+      text-align: center;
+      display: grid;
+}
+
+#story-con p {
+      display: grid;
+      grid-column: 1/-1;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: italic;
+      line-height: 2rem;
+      padding: 1rem 1rem 1rem;
+      text-align: center;
+      margin-top: 2rem;
+}
+
+#ourstory-button {
+      display: grid;
+      font-size: 24px;
+      margin: 1rem 1.5rem 2rem;
+      grid-column: 2/-1;
+      padding: 1rem;
+}
+
+/* 
+#ourstory-button:hover {
+      background-color: #1E346E;
+      color: #FFC738;
+      transition: all .3s ease-in-out;
+} */
+
+
+
+/* 6. ---Product-con--- */
+
+
+#product-con {
+      height: 800px;
+      background-color: #1E346E;
+      display: flex;
+      justify-content: center;
+}
+
+.prod-box {
+      margin-top: 50px;
+      padding-top: 30px;
+
+      background-color: #fff;
+      height: 600px;
+      width: 340px;
+
+      border-radius: 80px 80px 0 0;
+
+      color: #fff;      
+      text-decoration: none;
+      text-align: center;
+}
+
+.prod-box:hover{  
+      background-image: url(../images/m-hover-bkg.jpg);
+      
+}
+
+.prod-box a{
+
+      margin-top: 50px;
+      padding: 10px 20px;
+
+      background-color: #fff;
+      border-radius: 10px;
+      font-size: 16px;
+
+}
+
+.prod-box a:hover{
+      background-color: #FFC738;
+}
+
+.prod-box p {
+      color: #830000;
+      margin-top: 20px;
+      padding: 1rem ;
+      line-height: 1rem;
+      font-size: 16px;
+}
+
+
+
+/* Banner */
+
+#banner-tex {
+      margin-top: 100px;
+      margin-bottom: 10px;
+      font-style: italic;
+      font-size: 20px;
+      text-align: center;
+}
+
+#banner-tex span{
+      margin-right: 50px;
+      color: #FFC738;
+}
+
+
+/* 7. ---Ad img--- */
+
+#ad-img {
+      grid-column: 1/-1;
+      display: grid;
+      text-align: center;
+}
+
+#ad-1 {
+      grid-column: 1/-1;
+}
+
+#ad-2 {
+      grid-column: 1/-1;
+}
+
+#ad-img p {
+      margin-top: 50px;
+      grid-column: 1/-1;
+      padding: 1rem 1rem 1rem;
+      font-size: 24px;
+
+      margin-bottom: 100px;
+}
+
+
+
+
+/* 8. ---Footer--- */
+
+footer {
+      height: 1300px;
+      background-color:#110F40;
+      display: grid;
+}
+
+
+#footer-logo {
+      width: 300px;
+      grid-column: 1/4;
+      margin-top: 10px;
+      padding-left: 4rem;
+      padding-right: 4rem;
+}
+
+#contact-con {
+      grid-column: 1/-1;
+      padding: 2rem;
+      margin-top: 50px;
+      font-size: 10px;
+}
+
+
+#contact-con input {
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid #fff;
+      font-style: italic;
+
+      margin-bottom: 30px;
+      background-color: #110F40;
+
+      color: #fff;
+
+      padding-bottom: 15px;
+}
+
+#contact-con input:focus {
+      outline: none !important;
+}
+
+#Name_footer{
+      width: 250px;
+}
+
+#phone_footer {
+      width: 250px;
+}
+
+#email_footer {
+      width: 250px;
+}
+
+#message_footer {
+      width: 350px;
+}
+
+#send_footer {
+      border-radius: 40px;
+      background-color: #fff;
+      align-items: center;
+      font-style: italic;
+
+      cursor: pointer;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+}
+
+
+#send_footer:hover {
+      box-shadow: inset 0px -50px 0px 0px #FFC738;
+      transition:all .8s ease;
+}
+
+#send_footer span {
+      color: #110F40;
+      margin: 10px;
+}
+
+#info-con {
+      color: #fff;
+      grid-column: 1/4;
+      padding-left: 2rem;
+}
+
+#info-con h3 {
+      font-weight: 700;
+      font-style: normal;
+      margin-bottom: 1px;
+}
+
+#info-con span {
+      margin-bottom: 15px;
+}
+
+#sm-icons {
+      display: flex;
+      height: 3rem;
+      grid-column: 1/4;
+      padding-left: 2rem;;
+}
+
+#sm-icons img {
+      margin-right: 10px;
+}
+
+#ver-line {
+      grid-column: 1/-1;
+      border-bottom: solid 1px #fff;
+      padding: 1rem;
+      margin: 2rem; 
+}
+
+#ver-line span {
+      color: #fff;
+      font-size: 14px;
+      padding: 1rem;
+      margin-bottom: 30px;
+}
+
+
+
+
+
+
+/*---- 9. Our Story page -----*/
+
+
+#story {
+      background-image: url(../images/story-bkg.png);
+      margin-top: 30px;
+      display: grid;
+}
+
+#title {
+      height: 40px;
+      margin-top: 50px;
+      padding: 10px;
+
+      grid-column: 6/8;
+      background-color: #fff;
+      color: #110F40;
+      border-radius: 20px;
+
+      font-size: 30px;
+      text-align: center;
+}
+
+.story-img {
+      grid-column: 2/7;
+      margin-top: 40px;
+      margin-left: 35px;
+}
+
+.story-box {
+      grid-column: 7/12;
+      background-color: #78150D;
+      height: 460px;
+      width: 412px;
+
+      margin-top: 40px;
+      margin-left: -15px;
+      padding: 20px;
+
+      display: block;
+
+      color: #fff;
+}
+
+
+.story-box h3 {
+      margin-left: 20px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+}
+.story-box p {
+      margin-left: 20px;
+      font-size: 16px;
+      line-height: 25px;
+}
+
+
+#closing-tex {
+      grid-column: 2/12;
+      text-align: center;
+
+      margin-top: 100px;
+      margin-bottom: 60px;
+
+      padding: 20px;
+      color: #110F40;
+}
+
+#closing-tex p {
+      margin-bottom: 30px;
+}
+
+#closing-tex span {
+      font-size: 23px;
+      margin-top: 20px;
+      font-style: italic;
 }
