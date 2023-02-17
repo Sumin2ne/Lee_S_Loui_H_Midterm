@@ -13,6 +13,8 @@
       7. Ad img
       8. Footer
 
+      9. Our Story page
+
 */
 
 
@@ -473,4 +475,87 @@ footer {
       font-size: 15px;
 
       padding-bottom: 20px;
+}
+
+
+
+
+
+
+/*---- 9. Our Story page -----*/
+
+
+#story {
+      background-image: url(../images/story-bkg.png);
+      margin-top: 30px;
+      display: grid;
+}
+
+#title {
+      height: 40px;
+      margin-top: 50px;
+      padding: 10px;
+
+      grid-column: 6/8;
+      background-color: #fff;
+      color: #110F40;
+      border-radius: 20px;
+
+      font-size: 30px;
+      text-align: center;
+}
+
+.story-img {
+      grid-column: 2/7;
+      margin-top: 40px;
+      margin-left: 35px;
+}
+
+.story-box {
+      grid-column: 7/12;
+      background-color: #78150D;
+      height: 460px;
+      width: 412px;
+
+      margin-top: 40px;
+      margin-left: -15px;
+      padding: 20px;
+
+      display: block;
+
+      color: #fff;
+}
+
+
+.story-box h3 {
+      margin-left: 20px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+}
+.story-box p {
+      margin-left: 20px;
+      font-size: 16px;
+      line-height: 25px;
+}
+
+
+#closing-tex {
+      grid-column: 2/12;
+      text-align: center;
+
+      margin-top: 100px;
+      margin-bottom: 60px;
+
+      padding: 20px;
+      color: #110F40;
+}
+
+#closing-tex p {
+      margin-bottom: 30px;
+}
+
+#closing-tex span {
+      font-size: 23px;
+      margin-top: 20px;
+      font-style: italic;
 }
